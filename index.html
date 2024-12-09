@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kryptowaluty - Dane Historyczne</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Kryptowaluty - Dane Historyczne i Aktualizacja</h1>
+  </header>
+
+  <main>
+    <p>Kliknij przycisk, aby pobrać pełne dane historyczne dla BTC, ETH i SOL.</p>
+    <button id="update-button">Aktualizuj Dane Historyczne</button>
+    <p id="status-message"></p>
+
+    <section>
+      <h2>Dane Kryptowalut</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Kryptowaluta</th>
+            <th>Data</th>
+            <th>Cena Otwarcia (USD)</th>
+            <th>Cena Najwyższa (USD)</th>
+            <th>Cena Najniższa (USD)</th>
+            <th>Cena Zamknięcia (USD)</th>
+          </tr>
+        </thead>
+        <tbody id="crypto-table-body">
+          <!-- Wiersze będą dodawane dynamicznie -->
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Kryptowaluty - Dane Historyczne</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
